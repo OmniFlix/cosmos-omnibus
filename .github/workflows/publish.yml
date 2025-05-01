@@ -69,6 +69,6 @@ jobs:
           files: build.yml
           allow: fs.read=..
           set: |
-            node.tags=ghcr.io/omniflix:${{ steps.get-image-tag.outputs.image-tag }}
+            node.tags=ghcr.io/omniflix/cosmos-omnibus:${{ steps.get-image-tag.outputs.image-tag }}
             node.platform=linux/amd64
           push: true
